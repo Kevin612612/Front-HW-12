@@ -5,7 +5,7 @@ const blogsSidebar = document.getElementsByClassName('blog_sidebar')[0];
 
 blogsSidebar.addEventListener('click', function (event) {
     event.preventDefault();
-    fetch('/blogs', {
+    fetch('/https://hw-12.vercel.app/blogs', {
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
     })
