@@ -7,7 +7,7 @@ blogNameButton.addEventListener('click', function(event) {
     event.preventDefault();
     const blogName = document.getElementById('blog-name').value
     document.getElementById('blog-name').innerHTML = '' // clear input
-    fetch(`/blogs/find/${blogName}`, {
+    fetch(`https://hw-12.vercel.app/blogs/find/${blogName}`, {
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
     }).then(response => response.json())
