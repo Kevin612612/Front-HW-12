@@ -10,7 +10,7 @@ export function create_one_blog_div(name, description) {
     // create image h2  p2
     const image = document.createElement('img')
     image.classList.add('images')
-    image.src = './main-page/images/photo.png'
+    image.src = 'main_page/images/photo.png'
     const blogName = document.createElement('h2')
     const blogDescription = document.createElement('p2')
 
